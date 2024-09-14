@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>a divisible b</title>
+  </head>
+  <body>
+    <p>Input a:</p>
+    <input type="number" id="a" />
+    <p>Input b:</p>
+    <input type="number" id="b" />
+    <p>
+      <button type="button" onclick="check()">
+        Check if a is divisible by b
+      </button>
+    </p>
+    <p id="output"></p>
+
+    <script>
+      function check() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let divisible = a % b ? false : true;
+        if (divisible) {
+          document.getElementById("output").innerHTML = "a is divisible by b.";
+        } else {
+          document.getElementById("output").innerHTML =
+            "a is not divisible by b.";
+        }
+      }
+    </script>
+  </body>
+</html>
