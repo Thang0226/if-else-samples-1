@@ -2,7 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>a divisible b</title>
+    <title>Find max number</title>
+    <style>
+      td {
+        height: 25px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <h2>Find max number in 3 numbers</h2>
+    <form>
+      <table>
+        <tr>
+          <td>Input first number:</td>
+          <td><input type="number" id="a" /></td>
+        </tr>
+        <tr>
+          <td>Input second number:</td>
+          <td><input type="number" id="b" /></td>
+        </tr>
+        <tr>
+          <td>Input third number:</td>
+          <td><input type="number" id="c" /></td>
+        </tr>
+      </table>
+      <br />
+      <button type="button" onclick="find()">Find max number</button>
+      <button type="reset">Delete numbers</button>
+      <p id="output"></p>
+    </form>
+
+    <script src="find_max.js"></script>
+  </body>
 </html>

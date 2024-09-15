@@ -2,7 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>a divisible b</title>
+    <title>Student Grader</title>
   </head>
-  <body></body>
+  <body>
+    <form>
+      <p>Mini test scores:</p>
+      <input type="number" id="mini1" placeholder="Mini test 1 score" />
+      <input type="number" id="mini2" placeholder="Mini test 2 score" />
+      <input type="number" id="mini3" placeholder="Mini test 3 score" />
+      <p>Mid-semester test score:</p>
+      <input type="number" id="mid" placeholder="score" />
+      <p>Final test score:</p>
+      <input type="number" id="final" placeholder="score" />
+      <p>
+        <button type="button" onclick="grade()">Calculate grade</button>
+        <button type="reset">Delete scores</button>
+      </p>
+      <p id="output" style="background-color: yellow; width: 70px"></p>
+    </form>
+
+    <script src="student_grade.js"></script>
+  </body>
 </html>

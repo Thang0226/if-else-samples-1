@@ -2,7 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>a divisible b</title>
+    <title>Check integer</title>
   </head>
-  <body></body>
+  <body>
+    <p>Enter an integer number:</p>
+    <p><input type="number" id="input" /></p>
+    <p><button type="button" onclick="check()">Check</button></p>
+    <p id="output"></p>
+
+    <script>
+      function check() {
+        let num = +document.getElementById("input").value;
+        let output = "";
+
+        if (num > 0) {
+          output = "The number is greater than 0.";
+        } else if (num < 0) {
+          output = "The number is smaller than 0.";
+        } else {
+          output = "The number is neither greater nor smaller than 0.";
+        }
+
+        document.getElementById("output").innerHTML = output;
+      }
+    </script>
+  </body>
 </html>

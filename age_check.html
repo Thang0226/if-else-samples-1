@@ -2,7 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>a divisible b</title>
+    <title>Age check</title>
   </head>
-  <body></body>
+  <body>
+    <p>
+      Age:
+      <input type="number" id="age" />
+    </p>
+    <p><button type="button" onclick="check()">Check</button></p>
+    <p id="output"></p>
+
+    <script>
+      function check() {
+        let age = +document.getElementById("age").value;
+        let output = "";
+
+        if (age >= 14) {
+          output = "Age is high enough for attending grade 10.";
+        } else {
+          output = "Age is not high enough for attending grade 10.";
+        }
+
+        document.getElementById("output").innerHTML = output;
+      }
+    </script>
+  </body>
 </html>

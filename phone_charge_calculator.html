@@ -2,7 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>a divisible b</title>
+    <title>Phone Charge</title>
   </head>
-  <body></body>
+  <body>
+    <h2>Phone charge calculator</h2>
+    <form>
+      <p>Input your total call time in minutes:</p>
+      <input type="number" id="input" />minutes
+      <p>
+        <button type="button" onclick="calculate()">
+          Calculate phone charge
+        </button>
+        <button type="reset">Delete input</button>
+      </p>
+      <p id="output" style="font-style: italic; font-size: large">
+        Result will display here
+      </p>
+    </form>
+
+    <script src="phone_charge.js"></script>
+  </body>
 </html>
